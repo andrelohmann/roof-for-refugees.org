@@ -1,0 +1,10 @@
+en:
+  TopMenu:
+    # Navbar Top Menu
+    PROFILE: 'Profile'
+  BottomMenu:
+    # Navbar Bottom Menu
+    TERMS: 'Terms and Conditions'
+    PRIVACY: 'Privacy Policy'
+    CONTACT: 'Contact'
+    IMPRINT: 'Imprint'
