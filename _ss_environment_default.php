@@ -83,27 +83,30 @@ define('FACEBOOK_APP_ID','YOUR_FACEBOOK_APP_ID');
 define('FACEBOOK_APP_SECRET','YOUR_FACEBOOK_APP_SECRET');
 define('FACEBOOK_REDIRECT_URL','YOUR_FACEBOOK_REDIRECT_URL'); // http://YOURDOMAIN/facebook/auth
 define('FACEBOOK_SCOPE','YOUR_FACEBOOK_SCOPE'); // email,user_about_me,user_birthday
-define('FACEBOOK_SIGNUP_PATH','facebook/signup'); // change for custom signup page
+define('FACEBOOK_FIELDS','id,name,email'); // email,user_about_me,user_birthday
+define('FACEBOOK_SIGNUP_PATH','facebooksignup/index'); // change for custom signup page
+define('FACEBOOK_EMAILEXISTS_PATH','facebook/emailexists'); // change for custom signup page
 define('FACEBOOK_ERROR_PATH','facebook/error');
 
 define('GOOGLE_CLIENT_ID','YOUR_GOOGLE_CLIENT_ID');
 define('GOOGLE_CLIENT_SECRET','YOUR_GOOGLE_CLIENT_SECRET');
 define('GOOGLE_REDIRECT_URL','YOUR_GOOGLE_REDIRECT_URL'); // http://YOURDOMAIN/google/auth
 define('GOOGLE_SCOPE','YOUR_GOOGLE_SCOPE'); // https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile
-define('GOOGLE_SIGNUP_PATH','google/signup'); // change for custom signup page
+define('GOOGLE_SIGNUP_PATH','googlesignup/index'); // change for custom signup page
+define('GOOGLE_EMAILEXISTS_PATH','google/emailexists'); // change for custom signup page
 define('GOOGLE_ERROR_PATH','google/error');
 
 define('TWITTER_CONSUMER_KEY','YOUR_TWITTER_CONSUMER_KEY');
 define('TWITTER_CONSUMER_SECRET','YOUR_TWITTER_CONSUMER_SECRET');
 define('TWITTER_CALLBACK_URL','YOUR_TWITTER_CALLBACK_URL'); // http://YOURDOMAIN/twitter/auth
-define('TWITTER_SIGNUP_PATH','twitter/signup'); // change for custom signup page
+define('TWITTER_SIGNUP_PATH','twittersignup/index'); // change for custom signup page
 define('TWITTER_ERROR_PATH','twitter/error');
 
 define('INSTAGRAM_CLIENT_ID', 'YOUR_INSTAGRAM_CLIENT_ID');
 define('INSTAGRAM_CLIENT_SECRET', 'YOUR_INSTAGRAM_CLIENT_SECRET');
 define('INSTAGRAM_REDIRECT_URL', 'YOUR_INSTAGRAM_REDIRECT_URL');
 define('INSTAGRAM_SCOPE','YOUR_INSTAGRAM_SCOPE'); // basic
-define('INSTAGRAM_SIGNUP_PATH','instagram/signup'); // change for custom signup page
+define('INSTAGRAM_SIGNUP_PATH','instagramsignup/index'); // change for custom signup page
 define('INSTAGRAM_ERROR_PATH','instagram/error');
 
 // Session Extender

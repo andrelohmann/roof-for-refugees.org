@@ -1,25 +1,22 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
+/*
+ * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
-class SignupForm extends Form {
-    
+class GoogleSignupForm extends BootstrapHorizontalForm {
+ 
     public function __construct($controller, $name, $fields = null, $actions = null) {
         
         $fields = new FieldList(
-            $Nickname = TextField::create('Nickname')->setTitle(_t('Member.NICKNAME','Member.NICKNAME')),
+            $Nickname = TextField::create('Nickname')->setTitle(_t('Member.NICKNAME','Member.NICKNAME'))->setValue(Session::get('FormInfo.GoogleSignupForm.Nickname')),
             $Type = OptionsetField::create('Type')->setTitle(_t('Member.TYPE','Member.TYPE'))->setSource(array(
                 "refugee" => _t('Member.TYPEREFUGEESIGNUP', 'Member.TYPEREFUGEESIGNUP'),
                 "hostel" => _t('Member.TYPEHOSTELSIGNUP', 'Member.TYPEHOSTELSIGNUP'),
                 "donator" => _t('Member.TYPEDONATORSIGNUP', 'Member.TYPEDONATORSIGNUP')
             )),
             $Location = BootstrapGeoLocationField::create('Location')->setTitle(_t('Member.LOCATION','Member.LOCATION')),
-            $Email = EmailField::create('Email')->setTitle(_t('Member.EMAIL','Member.EMAIL')),
-            PasswordField::create('Password')->setTitle(_t('Member.PASSWORD','Member.PASSWORD')),
+            
             LiteralField::create('Accept_TOS', _t('SignupForm.CONFIRMTOS', 'SignupForm.CONFIRMTOS'))
         );
         
@@ -35,30 +32,45 @@ class SignupForm extends Form {
             $name,
             $fields,
             $actions,
-            new RequiredUniqueFields(
-                    $required = array(
-                        "Nickname",
-                        "Type",
-                        "Location",
-                        "Email",
-                        "Password"
-                    ), $unique = array(
-                        "Email" => _t('SignupForm.EMAILEXISTS', 'SignupForm.EMAILEXISTS')
-                    ), $objectClass = 'Member'
-            )
+            new RequiredFields(array(
+                "Nickname",
+                "Type",
+                "Location"
+            ))
         );
     }
     
     public function doSignup(array $data) {
-            
-        $o_Member = Member::create();
         
+        if(!$user = Session::get('GoogleUserData')) return $this->controller->redirect('google/error');
+        
+        $o_Member = new Member();
+            
         $this->saveInto($o_Member);
             
-        $o_Member->Locale = i18n::get_locale();
-        $o_Member->write();
+        $o_Member->SocialConnectType = 'google';
             
+        $o_Member->GoogleID = $user['id'];
+            
+        $o_Member->Email = $user['email'];
+            
+        $o_Member->Locale = i18n::get_locale();
+            
+        EmailVerifiedMember::set_deactivate_send_validation_mail(false);
+        $o_Member->Verified = true;
+        $o_Member->VerificationEmailSent = true;
+        EmailVerifiedMember::set_deactivate_send_validation_mail(true);
+        $o_Member->write();
+        EmailVerifiedMember::set_deactivate_send_validation_mail(false);
+            
+        $o_Member->addToFrontendGroup();
+            
+        Session::clear('GoogleUserData');
+            
+        $o_Member->logIn();
+
+        // return Director::redirect($this->URLSegment.'/profile');
         // We use Email Verified Member
-        $this->controller->redirect('Security/emailsent/'.$data['Email']);
+        return $this->controller->redirect(Security::default_login_dest());
     }
 }

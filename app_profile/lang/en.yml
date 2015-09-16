@@ -1,4 +1,16 @@
-en: 
+en:
+  Member:
+    NICKNAME: 'Nickname'
+    TYPE: 'Role'
+    TYPEREFUGEE: 'Refugee'
+    TYPEHOSTEL: 'Share roof'
+    TYPEDONATOR: 'Donator'
+    TYPEREFUGEESIGNUP: 'I''m a refugee seeking for shelter'
+    TYPEHOSTELSIGNUP: 'I share my roof'
+    TYPEDONATORSIGNUP: 'I''m a regular donor'
+    TYPEDESCRIPTION: 'Select the role you are in, wether you are looking for shelter, you can offer a bed or you are willed to support the refugees in your neighborhood with food, clothes, money or even time.'
+    LOCATION: 'Location'
+    LOCATIONDESCRIPTION: 'Specify your location as accurate as you like, to get located by surrounding refugees and donators'
   Profile:
     # Home index Title
     INDEXTITLE: 'Profile Title'
@@ -8,6 +20,4 @@ en:
   SignupForm:
     CONFIRMTOS: '<p>By clicking the button you agree with the <a href="home/terms">Terms and Conditions</a> & <a href="home/privacy">Privacy Policy</a></p>'
     BUTTONSIGNUP: 'Signup'
-    MODALBUTTON: '<i class="fa fa-envelope"></i> Signup with Email'
-    MODALTITLE: 'Signup with your Email address'
     EMAILEXISTS: 'Your email allready exists on the system'

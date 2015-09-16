@@ -1,9 +1,24 @@
 en: 
   Home:
+    # Signup Headline
+    SIGNUPHEADLINE: 'Signup with your email address'
+    LOGINHEADLINE: 'or login with one of the following networks'
+    LOGINWITHEMAIL: 'Login with your email address'
     # Home index Title
-    HOMETITLE: 'Home Title'
+    HOMETITLE: 'What you can do'
     # Home Index Content
-    HOMECONTENT: 'Home Content'
+    HOMECONTENT: '<p>Thounsands of refugees are looking for shelter. Here is how you can help them by sharing your roof or directly donating to family, friends and neighbors that are housing a refugee.</p>'
+    # The Idea behind the Project
+    IDEA: >
+      <h2>Our Mission</h2>
+      <p>There are 800.000 refugees expected to come to germany this year.<br />
+      This number is much more than governmental institutions can handle at the current time.<br />
+      That's why the sitiuation gets worse with every day for the arrivals. The shelter giving camps are allready crowded and many people have to sleep under the open sky, waiting for their registration and further steps. Now that the cold season is starting these people are more and more reliant on a faster process to get a roof over their head.<br /><br />
+      With 40 million households in germany the number of 800.000 refugees means one refugee on every 50th household.<br />
+      We should join our forces now to help these people where our government is lacking the necessary resources.<br />
+      Not everyone in germany can share a room with one or two refugees, but if only one out fifty households in a neighborhood can offer a room, bed or couch, than there are still 49 households left, that can support this one with further donations like food, clothes, money or even time for teaching, care or appointments in the walfare institutions.<br /><br />
+      Register now, to show the world, that we all stand together as one.<br /><br />
+      Refugees welcome!</p>
     # Terms
     TERMSTITLE: 'Terms and Conditions'
     TERMSCONTENT: 'Terms and Conditions'

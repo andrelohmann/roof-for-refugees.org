@@ -1,0 +1,17 @@
+de:
+  RfrFacebookConnect:
+    SIGNUPTITLE: 'Anmelden mit Facebook'
+    SIGNUPCONTENT: 'Schließend Sie die Anmeldung mit Facebook ab'
+    BUTTONSIGNUP: 'Anmelden'
+  RfrGoogleConnect:
+    SIGNUPTITLE: 'Anmelden mit Google'
+    SIGNUPCONTENT: 'Schließend Sie die Anmeldung mit Google ab'
+    BUTTONSIGNUP: 'Anmelden'
+  RfrInstagramConnect:
+    SIGNUPTITLE: 'Anmelden mit Instagram'
+    SIGNUPCONTENT: 'Schließend Sie die Anmeldung mit Instagram ab'
+    BUTTONSIGNUP: 'Anmelden'
+  RfrTwitterConnect:
+    SIGNUPTITLE: 'Anmelden mit Twitter'
+    SIGNUPCONTENT: 'Schließend Sie die Anmeldung mit Twitter ab'
+    BUTTONSIGNUP: 'Anmelden'

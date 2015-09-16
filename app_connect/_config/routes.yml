@@ -1,0 +1,10 @@
+---
+Name: customroutes
+After: framework/routes#coreroutes
+---
+Director:
+  rules:
+    'facebooksignup//$Action/$ID/$OtherID' : 'FacebookSignupController'
+    'googlesignup//$Action/$ID/$OtherID' : 'GoogleSignupController'
+    'instagramsignup//$Action/$ID/$OtherID' : 'InstagramSignupController'
+    'twittersignup//$Action/$ID/$OtherID' : 'TwitterSignupController'

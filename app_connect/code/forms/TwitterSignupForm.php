@@ -1,25 +1,23 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
+/*
+ * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
-class SignupForm extends Form {
-    
+class TwitterSignupForm extends BootstrapHorizontalForm {
+ 
     public function __construct($controller, $name, $fields = null, $actions = null) {
         
         $fields = new FieldList(
-            $Nickname = TextField::create('Nickname')->setTitle(_t('Member.NICKNAME','Member.NICKNAME')),
+            $Nickname = TextField::create('Nickname')->setTitle(_t('Member.NICKNAME','Member.NICKNAME'))->setValue(Session::get('FormInfo.TwitterSignupForm.Nickname')),
             $Type = OptionsetField::create('Type')->setTitle(_t('Member.TYPE','Member.TYPE'))->setSource(array(
                 "refugee" => _t('Member.TYPEREFUGEESIGNUP', 'Member.TYPEREFUGEESIGNUP'),
                 "hostel" => _t('Member.TYPEHOSTELSIGNUP', 'Member.TYPEHOSTELSIGNUP'),
                 "donator" => _t('Member.TYPEDONATORSIGNUP', 'Member.TYPEDONATORSIGNUP')
             )),
-            $Location = BootstrapGeoLocationField::create('Location')->setTitle(_t('Member.LOCATION','Member.LOCATION')),
             $Email = EmailField::create('Email')->setTitle(_t('Member.EMAIL','Member.EMAIL')),
-            PasswordField::create('Password')->setTitle(_t('Member.PASSWORD','Member.PASSWORD')),
+            $Location = BootstrapGeoLocationField::create('Location')->setTitle(_t('Member.LOCATION','Member.LOCATION')),
+            
             LiteralField::create('Accept_TOS', _t('SignupForm.CONFIRMTOS', 'SignupForm.CONFIRMTOS'))
         );
         
@@ -39,9 +37,8 @@ class SignupForm extends Form {
                     $required = array(
                         "Nickname",
                         "Type",
-                        "Location",
                         "Email",
-                        "Password"
+                        "Location"
                     ), $unique = array(
                         "Email" => _t('SignupForm.EMAILEXISTS', 'SignupForm.EMAILEXISTS')
                     ), $objectClass = 'Member'
@@ -50,15 +47,34 @@ class SignupForm extends Form {
     }
     
     public function doSignup(array $data) {
-            
-        $o_Member = Member::create();
         
+        if(!$user = Session::get('TwitterUserData')) return $this->controller->redirect('twitter/error');
+        
+        $o_Member = new Member();
+            
         $this->saveInto($o_Member);
             
-        $o_Member->Locale = i18n::get_locale();
-        $o_Member->write();
+        $o_Member->SocialConnectType = 'twitter';
             
+        $o_Member->TwitterID = $user['id'];
+            
+        $o_Member->Locale = i18n::get_locale();
+            
+        EmailVerifiedMember::set_deactivate_send_validation_mail(false);
+        $o_Member->Verified = true;
+        $o_Member->VerificationEmailSent = true;
+        EmailVerifiedMember::set_deactivate_send_validation_mail(true);
+        $o_Member->write();
+        EmailVerifiedMember::set_deactivate_send_validation_mail(false);
+            
+        $o_Member->addToFrontendGroup();
+            
+        Session::clear('TwitterUserData');
+            
+        $o_Member->logIn();
+
+        // return Director::redirect($this->URLSegment.'/profile');
         // We use Email Verified Member
-        $this->controller->redirect('Security/emailsent/'.$data['Email']);
+        return $this->controller->redirect(Security::default_login_dest());
     }
 }
