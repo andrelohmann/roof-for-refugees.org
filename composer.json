@@ -31,6 +31,10 @@
             },
             {
                 "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-bootstrap_navbar_loginform"
+            },
+            {
+                "type": "vcs",
                 "url": "https://github.com/andrelohmann/silverstripe-extendedobjects"
             },
             {
@@ -71,22 +75,23 @@
 		"composer/installers": "*",
                 "php-ffmpeg/php-ffmpeg": "0.6.0",
                 "silverstripe/framework": "3.2.0-rc1",
-                "andrelohmann-silverstripe/framework-fixes": "3.2.0-rc1",
-                "andrelohmann-silverstripe-themes/bootstrap": "4.0.*",
-                "andrelohmann-silverstripe/smtpmailer": "2.0.*",
-                "andrelohmann-silverstripe/geoip": "2.0.*",
-                "andrelohmann-silverstripe/localegeoip": "2.0.*",
-                "andrelohmann-silverstripe/geoform": "2.0.*",
-                "andrelohmann-silverstripe/extendedobjects": "2.0.*",
-                "andrelohmann-silverstripe/email_verified_member": "2.0.*",
-                "andrelohmann-silverstripe/bootstrap_social_connect": "2.1.*",
-                "andrelohmann-silverstripe/bootstrap_extra_fields": "2.1.*",
-                "andrelohmann-silverstripe/bootstrap_navbar_languageform": "2.0.*",
-                "andrelohmann-silverstripe/legacyfields": "2.0.*",
-                "andrelohmann-silverstripe/mobile_detector": "2.0.*",
-                "andrelohmann-silverstripe/session_extender": "2.0.*",
-                "andrelohmann-silverstripe/gua-cookie-policy": "1.0.*",
-                "andrelohmann-silverstripe/shariff": "1.0.*"
+                "andrelohmann-silverstripe/framework-fixes": "dev-master",
+                "andrelohmann-silverstripe-themes/bootstrap": "4.*",
+                "andrelohmann-silverstripe/smtpmailer": "2.*",
+                "andrelohmann-silverstripe/geoip": "2.*",
+                "andrelohmann-silverstripe/localegeoip": "2.*",
+                "andrelohmann-silverstripe/geoform": "2.*",
+                "andrelohmann-silverstripe/extendedobjects": "2.*",
+                "andrelohmann-silverstripe/email_verified_member": "2.*",
+                "andrelohmann-silverstripe/bootstrap_social_connect": "2.*",
+                "andrelohmann-silverstripe/bootstrap_extra_fields": "2.*",
+                "andrelohmann-silverstripe/bootstrap_navbar_loginform": "2.*",
+                "andrelohmann-silverstripe/bootstrap_navbar_languageform": "2.*",
+                "andrelohmann-silverstripe/legacyfields": "2.*",
+                "andrelohmann-silverstripe/mobile_detector": "2.*",
+                "andrelohmann-silverstripe/session_extender": "2.*",
+                "andrelohmann-silverstripe/gua-cookie-policy": "1.*",
+                "andrelohmann-silverstripe/shariff": "1.*"
 	},
         "scripts": {
             "post-install-cmd": [

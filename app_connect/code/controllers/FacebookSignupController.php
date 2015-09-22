@@ -32,6 +32,13 @@ class FacebookSignupController extends Controller {
  	}
 
 	/**
+	 * Returns a link to this controller.  Overload with your own Link rules if they exist.
+	 */
+	public function Link() {
+		return self::$url_segment .'/';
+	}
+
+	/**
 	 * Show the registration form
 	 */
 	public function index() { // Signup Step 1
@@ -41,8 +48,8 @@ class FacebookSignupController extends Controller {
             // Signup nur zulassen, wennFacebookUserData Session gesetzt wurde
             if(!$user = Session::get('FacebookUserData')) return $this->redirect('home/index');
             
-            if(isset($user['username']) && !Session::get('FormInfo.FacebookSignupForm.Nickname')){
-                Session::set('FormInfo.FacebookSignupForm.Nickname', $user['username']);
+            if(isset($user['name']) && !Session::get('FormInfo.FacebookSignupForm.Nickname')){
+                Session::set('FormInfo.FacebookSignupForm.Nickname', $user['name']);
             }
             
             return $this->customise(new ArrayData(array(

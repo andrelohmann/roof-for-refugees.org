@@ -1,0 +1,1950 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "a9f907d3b8ebd70e2160af0252adfdc6",
+    "content-hash": "2843f015d9f0a1e3bda7f03119bd0d74",
+    "packages": [
+        {
+            "name": "alchemy/binary-driver",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alchemy-fr/BinaryDriver.git",
+                "reference": "b32c03d4b56ce29f783051eac55887adae654b41"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alchemy-fr/BinaryDriver/zipball/b32c03d4b56ce29f783051eac55887adae654b41",
+                "reference": "b32c03d4b56ce29f783051eac55887adae654b41",
+                "shasum": ""
+            },
+            "require": {
+                "evenement/evenement": "~1.0",
+                "monolog/monolog": "~1.3",
+                "php": ">=5.3.3",
+                "psr/log": "~1.0",
+                "symfony/process": "~2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Alchemy": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Romain Neutron",
+                    "email": "imprec@gmail.com",
+                    "homepage": "http://www.lickmychip.com/"
+                },
+                {
+                    "name": "Phraseanet Team",
+                    "email": "info@alchemy.fr",
+                    "homepage": "http://www.phraseanet.com/"
+                },
+                {
+                    "name": "Nicolas Le Goff",
+                    "email": "legoff.n@gmail.com"
+                }
+            ],
+            "description": "A set of tools to build binary drivers",
+            "keywords": [
+                "binary",
+                "driver"
+            ],
+            "time": "2013-06-21 15:51:20"
+        },
+        {
+            "name": "andrelohmann-silverstripe-themes/bootstrap",
+            "version": "v4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrelohmann/silverstripe-themes-bootstrap.git",
+                "reference": "be6196583dcd9501bb1fd7dcc19d2baffff3ab5e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrelohmann/silverstripe-themes-bootstrap/zipball/be6196583dcd9501bb1fd7dcc19d2baffff3ab5e",
+                "reference": "be6196583dcd9501bb1fd7dcc19d2baffff3ab5e",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.4"
+            },
+            "type": "silverstripe-theme",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andre Lohmann",
+                    "homepage": "https://github.com/andrelohmann"
+                }
+            ],
+            "description": "Bootstrap Theme for Silverstripe",
+            "keywords": [
+                "framework",
+                "silverstripe"
+            ],
+            "support": {
+                "source": "https://github.com/andrelohmann/silverstripe-themes-bootstrap/tree/v4.1.0",
+                "issues": "https://github.com/andrelohmann/silverstripe-themes-bootstrap/issues"
+            },
+            "time": "2015-09-18 03:30:23"
+        },
+        {
+            "name": "andrelohmann-silverstripe/bootstrap_extra_fields",
+            "version": "v2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrelohmann/silverstripe-bootstrap_extra_fields.git",
+                "reference": "9f5c4ebb3b94c37fb5e6fd5b83d3408e76b1b9e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrelohmann/silverstripe-bootstrap_extra_fields/zipball/9f5c4ebb3b94c37fb5e6fd5b83d3408e76b1b9e2",
+                "reference": "9f5c4ebb3b94c37fb5e6fd5b83d3408e76b1b9e2",
+                "shasum": ""
+            },
+            "require": {
+                "andrelohmann/semver": "1.1.*",
+                "composer/installers": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "silverstripe-module",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andre Lohmann",
+                    "homepage": "https://github.com/andrelohmann"
+                }
+            ],
+            "description": "Silverstripe extra Fieldtypes for Bootstrap",
+            "keywords": [
+                "framework",
+                "silverstripe"
+            ],
+            "support": {
+                "source": "https://github.com/andrelohmann/silverstripe-bootstrap_extra_fields/tree/v2.1.2",
+                "issues": "https://github.com/andrelohmann/silverstripe-bootstrap_extra_fields/issues"
+            },
+            "time": "2015-09-22 12:19:44"
+        },
+        {
+            "name": "andrelohmann-silverstripe/bootstrap_navbar_languageform",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrelohmann/silverstripe-bootstrap_navbar_languageform.git",
+                "reference": "e0dfaca9c1f63086866aeaf3fe4de5f0ab9e0406"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrelohmann/silverstripe-bootstrap_navbar_languageform/zipball/e0dfaca9c1f63086866aeaf3fe4de5f0ab9e0406",
+                "reference": "e0dfaca9c1f63086866aeaf3fe4de5f0ab9e0406",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "silverstripe-module",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andre Lohmann",
+                    "homepage": "https://github.com/andrelohmann"
+                }
+            ],
+            "description": "Silverstripe Languageselector Form for Bootstrap Navbar",
+            "keywords": [
+                "framework",
+                "silverstripe"
+            ],
+            "support": {
+                "source": "https://github.com/andrelohmann/silverstripe-bootstrap_navbar_languageform/tree/v2.0.0",
+                "issues": "https://github.com/andrelohmann/silverstripe-bootstrap_navbar_languageform/issues"
+            },
+            "time": "2015-09-01 09:02:58"
+        },
+        {
+            "name": "andrelohmann-silverstripe/bootstrap_navbar_loginform",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrelohmann/silverstripe-bootstrap_navbar_loginform.git",
+                "reference": "bab23331d521f812ed8dbd83217b7380af809b53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrelohmann/silverstripe-bootstrap_navbar_loginform/zipball/bab23331d521f812ed8dbd83217b7380af809b53",
+                "reference": "bab23331d521f812ed8dbd83217b7380af809b53",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "silverstripe-module",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andre Lohmann",
+                    "homepage": "https://github.com/andrelohmann"
+                }
+            ],
+            "description": "Silverstripe Login Form for Bootstrap Navbar",
+            "keywords": [
+                "framework",
+                "silverstripe"
+            ],
+            "support": {
+                "source": "https://github.com/andrelohmann/silverstripe-bootstrap_navbar_loginform/tree/v2.0.1",
+                "issues": "https://github.com/andrelohmann/silverstripe-bootstrap_navbar_loginform/issues"
+            },
+            "time": "2015-09-21 07:41:42"
+        },
+        {
+            "name": "andrelohmann-silverstripe/bootstrap_social_connect",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrelohmann/silverstripe-bootstrap_social_connect.git",
+                "reference": "14a99b815ba08c27760e80fb4ad12160b866d4dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrelohmann/silverstripe-bootstrap_social_connect/zipball/14a99b815ba08c27760e80fb4ad12160b866d4dc",
+                "reference": "14a99b815ba08c27760e80fb4ad12160b866d4dc",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "silverstripe-module",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andre Lohmann",
+                    "homepage": "https://github.com/andrelohmann"
+                }
+            ],
+            "description": "Silverstripe Connect/Login Buttons for Facebook, Twitter and Google",
+            "keywords": [
+                "framework",
+                "silverstripe"
+            ],
+            "support": {
+                "source": "https://github.com/andrelohmann/silverstripe-bootstrap_social_connect/tree/v2.1.0",
+                "issues": "https://github.com/andrelohmann/silverstripe-bootstrap_social_connect/issues"
+            },
+            "time": "2015-09-16 18:58:41"
+        },
+        {
+            "name": "andrelohmann-silverstripe/email_verified_member",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrelohmann/silverstripe-email_verified_member.git",
+                "reference": "216ce59b5d37356b2848d75cd75ac25fb3c36cf7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrelohmann/silverstripe-email_verified_member/zipball/216ce59b5d37356b2848d75cd75ac25fb3c36cf7",
+                "reference": "216ce59b5d37356b2848d75cd75ac25fb3c36cf7",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "silverstripe-module",
+            "support": {
+                "source": "https://github.com/andrelohmann/silverstripe-email_verified_member/tree/v2.0.0",
+                "issues": "https://github.com/andrelohmann/silverstripe-email_verified_member/issues"
+            },
+            "time": "2015-09-01 09:15:29"
+        },
+        {
+            "name": "andrelohmann-silverstripe/extendedobjects",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrelohmann/silverstripe-extendedobjects.git",
+                "reference": "da239d70d96a478207cc1f6b6e5cc19d075df085"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrelohmann/silverstripe-extendedobjects/zipball/da239d70d96a478207cc1f6b6e5cc19d075df085",
+                "reference": "da239d70d96a478207cc1f6b6e5cc19d075df085",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.2",
+                "php-ffmpeg/php-ffmpeg": "0.6.0"
+            },
+            "type": "silverstripe-module",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andre Lohmann",
+                    "homepage": "https://github.com/andrelohmann"
+                }
+            ],
+            "description": "Some Object extensions for Silverstripe. Extends VideoObject, Image, Date, ...",
+            "keywords": [
+                "framework",
+                "silverstripe"
+            ],
+            "support": {
+                "source": "https://github.com/andrelohmann/silverstripe-extendedobjects/tree/v2.0.1",
+                "issues": "https://github.com/andrelohmann/silverstripe-extendedobjects/issues"
+            },
+            "time": "2015-09-19 18:25:39"
+        },
+        {
+            "name": "andrelohmann-silverstripe/framework-fixes",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrelohmann/silverstripe-framework-fixes.git",
+                "reference": "69df01345f898a1c1f7c15561b5bc67b42d35d05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrelohmann/silverstripe-framework-fixes/zipball/69df01345f898a1c1f7c15561b5bc67b42d35d05",
+                "reference": "69df01345f898a1c1f7c15561b5bc67b42d35d05",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "scripts": {
+                "post-install-cmd": [
+                    "cp vendor/andrelohmann-silverstripe/framework-fixes/* -r framework/"
+                ],
+                "post-update-cmd": [
+                    "cp vendor/andrelohmann-silverstripe/framework-fixes/* -r framework/"
+                ]
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andre Lohmann",
+                    "homepage": "https://github.com/andrelohmann"
+                }
+            ],
+            "description": "This Module patches the current framework Version",
+            "keywords": [
+                "framework",
+                "silverstripe"
+            ],
+            "support": {
+                "source": "https://github.com/andrelohmann/silverstripe-framework-fixes/tree/v3.2.0-rc1.1",
+                "issues": "https://github.com/andrelohmann/silverstripe-framework-fixes/issues"
+            },
+            "time": "2015-09-16 19:10:55"
+        },
+        {
+            "name": "andrelohmann-silverstripe/geoform",
+            "version": "v2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrelohmann/silverstripe-geoform.git",
+                "reference": "4670751a2a36e0e14860e28109ab8f8290a7fc2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrelohmann/silverstripe-geoform/zipball/4670751a2a36e0e14860e28109ab8f8290a7fc2f",
+                "reference": "4670751a2a36e0e14860e28109ab8f8290a7fc2f",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "silverstripe-module",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andre Lohmann",
+                    "homepage": "https://github.com/andrelohmann"
+                }
+            ],
+            "description": "Silverstripe Geoform",
+            "keywords": [
+                "framework",
+                "silverstripe"
+            ],
+            "support": {
+                "source": "https://github.com/andrelohmann/silverstripe-geoform/tree/v2.0.3",
+                "issues": "https://github.com/andrelohmann/silverstripe-geoform/issues"
+            },
+            "time": "2015-09-22 12:18:51"
+        },
+        {
+            "name": "andrelohmann-silverstripe/geoip",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrelohmann/silverstripe-geoip.git",
+                "reference": "63ef461ec6cf8006e4af1249269bcbb7a98e2601"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrelohmann/silverstripe-geoip/zipball/63ef461ec6cf8006e4af1249269bcbb7a98e2601",
+                "reference": "63ef461ec6cf8006e4af1249269bcbb7a98e2601",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "silverstripe-module",
+            "support": {
+                "source": "https://github.com/andrelohmann/silverstripe-geoip/tree/v2.0.0",
+                "issues": "https://github.com/andrelohmann/silverstripe-geoip/issues"
+            },
+            "time": "2015-09-01 09:28:08"
+        },
+        {
+            "name": "andrelohmann-silverstripe/gua-cookie-policy",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrelohmann/silverstripe-gua-cookie-policy.git",
+                "reference": "821cc4f96808737838b50ae4daec11e3985d36ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrelohmann/silverstripe-gua-cookie-policy/zipball/821cc4f96808737838b50ae4daec11e3985d36ac",
+                "reference": "821cc4f96808737838b50ae4daec11e3985d36ac",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "silverstripe-module",
+            "support": {
+                "source": "https://github.com/andrelohmann/silverstripe-gua-cookie-policy/tree/v1.0.0",
+                "issues": "https://github.com/andrelohmann/silverstripe-gua-cookie-policy/issues"
+            },
+            "time": "2015-09-01 09:34:07"
+        },
+        {
+            "name": "andrelohmann-silverstripe/legacyfields",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrelohmann/silverstripe-legacyfields.git",
+                "reference": "9734f15eb379ad2043564059d9f9faf97c2bc071"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrelohmann/silverstripe-legacyfields/zipball/9734f15eb379ad2043564059d9f9faf97c2bc071",
+                "reference": "9734f15eb379ad2043564059d9f9faf97c2bc071",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "silverstripe-module",
+            "support": {
+                "source": "https://github.com/andrelohmann/silverstripe-legacyfields/tree/v2.0.0",
+                "issues": "https://github.com/andrelohmann/silverstripe-legacyfields/issues"
+            },
+            "time": "2015-09-01 10:17:42"
+        },
+        {
+            "name": "andrelohmann-silverstripe/localegeoip",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrelohmann/silverstripe-localegeoip.git",
+                "reference": "21695454660bb4e1d5d1e5ac0b30e959a02f2ca2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrelohmann/silverstripe-localegeoip/zipball/21695454660bb4e1d5d1e5ac0b30e959a02f2ca2",
+                "reference": "21695454660bb4e1d5d1e5ac0b30e959a02f2ca2",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "silverstripe-module",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andre Lohmann",
+                    "homepage": "https://github.com/andrelohmann"
+                }
+            ],
+            "description": "Silverstripe locale geoip",
+            "keywords": [
+                "framework",
+                "silverstripe"
+            ],
+            "support": {
+                "source": "https://github.com/andrelohmann/silverstripe-localegeoip/tree/v2.0.0",
+                "issues": "https://github.com/andrelohmann/silverstripe-localegeoip/issues"
+            },
+            "time": "2015-09-01 09:36:53"
+        },
+        {
+            "name": "andrelohmann-silverstripe/mobile_detector",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrelohmann/silverstripe-mobile_detector.git",
+                "reference": "7ebd0603a0ebec7702c39227514baf992c649285"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrelohmann/silverstripe-mobile_detector/zipball/7ebd0603a0ebec7702c39227514baf992c649285",
+                "reference": "7ebd0603a0ebec7702c39227514baf992c649285",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "silverstripe-module",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andre Lohmann",
+                    "homepage": "https://github.com/andrelohmann"
+                }
+            ],
+            "description": "Silverstripe mobile detector",
+            "keywords": [
+                "framework",
+                "silverstripe"
+            ],
+            "support": {
+                "source": "https://github.com/andrelohmann/silverstripe-mobile_detector/tree/v2.0.0",
+                "issues": "https://github.com/andrelohmann/silverstripe-mobile_detector/issues"
+            },
+            "time": "2015-09-01 09:38:56"
+        },
+        {
+            "name": "andrelohmann-silverstripe/session_extender",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrelohmann/silverstripe-session_extender.git",
+                "reference": "f9ca5951962e6754a66ad0f02152358c103cc6fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrelohmann/silverstripe-session_extender/zipball/f9ca5951962e6754a66ad0f02152358c103cc6fe",
+                "reference": "f9ca5951962e6754a66ad0f02152358c103cc6fe",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "silverstripe-module",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andre Lohmann",
+                    "homepage": "https://github.com/andrelohmann"
+                }
+            ],
+            "description": "Silverstripe Session extender",
+            "keywords": [
+                "framework",
+                "silverstripe"
+            ],
+            "support": {
+                "source": "https://github.com/andrelohmann/silverstripe-session_extender/tree/v2.0.0",
+                "issues": "https://github.com/andrelohmann/silverstripe-session_extender/issues"
+            },
+            "time": "2015-09-01 09:40:38"
+        },
+        {
+            "name": "andrelohmann-silverstripe/shariff",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrelohmann/silverstripe-shariff.git",
+                "reference": "51d5c9c3ed14dbbc4b5ecffb5d21629aa9520b7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrelohmann/silverstripe-shariff/zipball/51d5c9c3ed14dbbc4b5ecffb5d21629aa9520b7e",
+                "reference": "51d5c9c3ed14dbbc4b5ecffb5d21629aa9520b7e",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "heise/shariff": "1.5.1",
+                "php": ">=5.4"
+            },
+            "type": "silverstripe-module",
+            "support": {
+                "source": "https://github.com/andrelohmann/silverstripe-shariff/tree/v1.0.0",
+                "issues": "https://github.com/andrelohmann/silverstripe-shariff/issues"
+            },
+            "time": "2015-09-01 09:41:46"
+        },
+        {
+            "name": "andrelohmann-silverstripe/smtpmailer",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrelohmann/silverstripe-smtpmailer.git",
+                "reference": "619b7e9bae984e42757fb871197d8a2b651e4f73"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrelohmann/silverstripe-smtpmailer/zipball/619b7e9bae984e42757fb871197d8a2b651e4f73",
+                "reference": "619b7e9bae984e42757fb871197d8a2b651e4f73",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "silverstripe-module",
+            "description": "SMTPMailer for Silverstripe",
+            "support": {
+                "source": "https://github.com/andrelohmann/silverstripe-smtpmailer/tree/v2.0.0",
+                "issues": "https://github.com/andrelohmann/silverstripe-smtpmailer/issues"
+            },
+            "time": "2015-09-01 10:02:45"
+        },
+        {
+            "name": "andrelohmann/semver",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrelohmann/SemVer.git",
+                "reference": "b31f5c72b2b9bd12f71c3ee9cc6f7d6c72c56bee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrelohmann/SemVer/zipball/b31f5c72b2b9bd12f71c3ee9cc6f7d6c72c56bee",
+                "reference": "b31f5c72b2b9bd12f71c3ee9cc6f7d6c72c56bee",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\": "src/League"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andre Lohmann",
+                    "homepage": "https://github.com/andrelohmann"
+                }
+            ],
+            "description": "parser for semantic versioning",
+            "keywords": [
+                "parser",
+                "semver"
+            ],
+            "time": "2015-09-10 07:56:51"
+        },
+        {
+            "name": "composer/installers",
+            "version": "v1.0.21",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
+                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
+                "shasum": ""
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "Composer\\Installers\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\Installers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "http://composer.github.com/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "SMF",
+                "Thelia",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "elgg",
+                "fuelphp",
+                "grav",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "moodle",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "zend",
+                "zikula"
+            ],
+            "time": "2015-02-18 17:17:01"
+        },
+        {
+            "name": "container-interop/container-interop",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "time": "2014-12-30 15:22:37"
+        },
+        {
+            "name": "doctrine/cache",
+            "version": "v1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/cache.git",
+                "reference": "8c434000f420ade76a07c64cbe08ca47e5c101ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/8c434000f420ade76a07c64cbe08ca47e5c101ca",
+                "reference": "8c434000f420ade76a07c64cbe08ca47e5c101ca",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "conflict": {
+                "doctrine/common": ">2.2,<2.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=3.7",
+                "predis/predis": "~1.0",
+                "satooshi/php-coveralls": "~0.6"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Cache\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Caching library offering an object-oriented API for many cache backends",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "cache",
+                "caching"
+            ],
+            "time": "2015-08-31 12:36:41"
+        },
+        {
+            "name": "evenement/evenement",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/igorw/evenement.git",
+                "reference": "fa966683e7df3e5dd5929d984a44abfbd6bafe8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/igorw/evenement/zipball/fa966683e7df3e5dd5929d984a44abfbd6bafe8d",
+                "reference": "fa966683e7df3e5dd5929d984a44abfbd6bafe8d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Evenement": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch",
+                    "homepage": "http://wiedler.ch/igor/"
+                }
+            ],
+            "description": "Événement is a very simple event dispatching library for PHP 5.3",
+            "keywords": [
+                "event-dispatcher"
+            ],
+            "time": "2012-05-30 15:01:08"
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "5.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "f3c8c22471cb55475105c14769644a49c3262b93"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f3c8c22471cb55475105c14769644a49c3262b93",
+                "reference": "f3c8c22471cb55475105c14769644a49c3262b93",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/ringphp": "^1.1",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.0",
+                "psr/log": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library and framework for building RESTful web service clients",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2015-05-20 03:47:55"
+        },
+        {
+            "name": "guzzlehttp/ringphp",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/RingPHP.git",
+                "reference": "dbbb91d7f6c191e5e405e900e3102ac7f261bc0b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/RingPHP/zipball/dbbb91d7f6c191e5e405e900e3102ac7f261bc0b",
+                "reference": "dbbb91d7f6c191e5e405e900e3102ac7f261bc0b",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/streams": "~3.0",
+                "php": ">=5.4.0",
+                "react/promise": "~2.0"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "ext-curl": "Guzzle will use specific adapters if cURL is present"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Ring\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function.",
+            "time": "2015-05-20 03:37:09"
+        },
+        {
+            "name": "guzzlehttp/streams",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/streams.git",
+                "reference": "47aaa48e27dae43d39fc1cea0ccf0d84ac1a2ba5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/streams/zipball/47aaa48e27dae43d39fc1cea0ccf0d84ac1a2ba5",
+                "reference": "47aaa48e27dae43d39fc1cea0ccf0d84ac1a2ba5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Stream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Provides a simple abstraction over streams of data",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "Guzzle",
+                "stream"
+            ],
+            "time": "2014-10-12 19:18:40"
+        },
+        {
+            "name": "heise/shariff",
+            "version": "1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/heiseonline/shariff-backend-php.git",
+                "reference": "23408a19f57b6d85312bcae00480b78b26e6fb72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/heiseonline/shariff-backend-php/zipball/23408a19f57b6d85312bcae00480b78b26e6fb72",
+                "reference": "23408a19f57b6d85312bcae00480b78b26e6fb72",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~5.2",
+                "php": ">=5.4.0",
+                "zendframework/zend-cache": "*",
+                "zendframework/zend-config": "*",
+                "zendframework/zend-json": "*"
+            },
+            "bin": [
+                "index.php"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Heise\\Shariff\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Philipp Busse",
+                    "email": "pmb@heise.de"
+                }
+            ],
+            "description": "PHP backend for Shariff. Shariff enables website users to share their favorite content without compromising their privacy.",
+            "homepage": "https://github.com/heiseonline/shariff-backend-php",
+            "keywords": [
+                "heise",
+                "shariff",
+                "social buttons"
+            ],
+            "time": "2015-06-12 11:13:28"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "1.17.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "0524c87587ab85bc4c2d6f5b41253ccb930a5422"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/0524c87587ab85bc4c2d6f5b41253ccb930a5422",
+                "reference": "0524c87587ab85bc4c2d6f5b41253ccb930a5422",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^2.4.9",
+                "doctrine/couchdb": "~1.0@dev",
+                "graylog2/gelf-php": "~1.0",
+                "php-console/php-console": "^3.1.3",
+                "phpunit/phpunit": "~4.5",
+                "phpunit/phpunit-mock-objects": "2.3.0",
+                "raven/raven": "~0.11",
+                "ruflin/elastica": ">=0.90 <3.0",
+                "swiftmailer/swiftmailer": "~5.3",
+                "videlalvaro/php-amqplib": "~2.4"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "php-console/php-console": "Allow sending log messages to Google Chrome",
+                "raven/raven": "Allow sending log messages to a Sentry server",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
+                "videlalvaro/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.16.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "time": "2015-08-31 09:17:37"
+        },
+        {
+            "name": "neutron/temporary-filesystem",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/romainneutron/Temporary-Filesystem.git",
+                "reference": "6b21fa99fd452efea16b9a7adb7304ccfff854d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/romainneutron/Temporary-Filesystem/zipball/6b21fa99fd452efea16b9a7adb7304ccfff854d0",
+                "reference": "6b21fa99fd452efea16b9a7adb7304ccfff854d0",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/filesystem": "~2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Neutron": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Romain Neutron",
+                    "email": "imprec@gmail.com",
+                    "homepage": "http://www.lickmychip.com/"
+                }
+            ],
+            "description": "Symfony filesystem extension to handle temporary files",
+            "time": "2013-10-10 10:58:09"
+        },
+        {
+            "name": "php-ffmpeg/php-ffmpeg",
+            "version": "0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHP-FFMpeg/PHP-FFMpeg.git",
+                "reference": "6e3134e4ecc96852b1205e6c88ceffdb8cf17d34"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHP-FFMpeg/PHP-FFMpeg/zipball/6e3134e4ecc96852b1205e6c88ceffdb8cf17d34",
+                "reference": "6e3134e4ecc96852b1205e6c88ceffdb8cf17d34",
+                "shasum": ""
+            },
+            "require": {
+                "alchemy/binary-driver": "~1.5",
+                "doctrine/cache": "~1.0",
+                "evenement/evenement": "~1.0",
+                "neutron/temporary-filesystem": "~2.1, >=2.1.1",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7",
+                "sami/sami": "~1.0",
+                "silex/silex": "~1.0"
+            },
+            "suggest": {
+                "php-ffmpeg/extras": "A compilation of common audio & video drivers for PHP-FFMpeg"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "FFMpeg": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Romain Neutron",
+                    "email": "imprec@gmail.com",
+                    "homepage": "http://www.lickmychip.com/"
+                },
+                {
+                    "name": "Phraseanet Team",
+                    "email": "info@alchemy.fr",
+                    "homepage": "http://www.phraseanet.com/"
+                }
+            ],
+            "description": "FFMpeg PHP, an Object Oriented library to communicate with AVconv / ffmpeg",
+            "keywords": [
+                "audio",
+                "audio processing",
+                "avconv",
+                "avprobe",
+                "ffmpeg",
+                "ffprobe",
+                "video",
+                "video processing"
+            ],
+            "time": "2015-01-30 19:07:38"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Psr\\Log\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "react/promise",
+            "version": "v2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/promise.git",
+                "reference": "3b6fca09c7d56321057fa8867c8dbe1abf648627"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/promise/zipball/3b6fca09c7d56321057fa8867c8dbe1abf648627",
+                "reference": "3b6fca09c7d56321057fa8867c8dbe1abf648627",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "React\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@gmail.com"
+                }
+            ],
+            "description": "A lightweight implementation of CommonJS Promises/A for PHP",
+            "time": "2015-07-03 13:48:55"
+        },
+        {
+            "name": "silverstripe/framework",
+            "version": "3.2.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-framework.git",
+                "reference": "b49149d9d273b357ba9a9a3d2858284b554f9daf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/b49149d9d273b357ba9a9a3d2858284b554f9daf",
+                "reference": "b49149d9d273b357ba9a9a3d2858284b554f9daf",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.3.3,<7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "silverstripe-module",
+            "autoload": {
+                "classmap": [
+                    "tests/behat/features/bootstrap"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "SilverStripe",
+                    "homepage": "http://silverstripe.com"
+                },
+                {
+                    "name": "The SilverStripe Community",
+                    "homepage": "http://silverstripe.org"
+                }
+            ],
+            "description": "The SilverStripe framework",
+            "homepage": "http://silverstripe.org",
+            "keywords": [
+                "framework",
+                "silverstripe"
+            ],
+            "time": "2015-08-26 02:16:06"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "v2.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Filesystem.git",
+                "reference": "f079e9933799929584200b9a926f72f29e291654"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/f079e9933799929584200b9a926f72f29e291654",
+                "reference": "f079e9933799929584200b9a926f72f29e291654",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "~2.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Filesystem Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-08-27 07:03:44"
+        },
+        {
+            "name": "symfony/process",
+            "version": "v2.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Process.git",
+                "reference": "f7b3f73f70a7f8f49a1c838dc3debbf054732d8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/f7b3f73f70a7f8f49a1c838dc3debbf054732d8e",
+                "reference": "f7b3f73f70a7f8f49a1c838dc3debbf054732d8e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "~2.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Process Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-08-27 06:45:45"
+        },
+        {
+            "name": "zendframework/zend-cache",
+            "version": "2.5.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-cache.git",
+                "reference": "7ff9d6b922ae29dbdc53f6a62b471fb6e58565df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-cache/zipball/7ff9d6b922ae29dbdc53f6a62b471fb6e58565df",
+                "reference": "7ff9d6b922ae29dbdc53f6a62b471fb6e58565df",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5",
+                "zendframework/zend-eventmanager": "~2.5",
+                "zendframework/zend-servicemanager": "~2.5",
+                "zendframework/zend-stdlib": "~2.5"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "1.7.*",
+                "phpunit/phpunit": "~4.0",
+                "zendframework/zend-serializer": "~2.5",
+                "zendframework/zend-session": "~2.5"
+            },
+            "suggest": {
+                "ext-apcu": "APCU, to use the APC storage adapter",
+                "ext-dba": "DBA, to use the DBA storage adapter",
+                "ext-memcache": "Memcache >= 2.0.0 to use the Memcache storage adapter",
+                "ext-memcached": "Memcached >= 1.0.0 to use the Memcached storage adapter",
+                "ext-mongo": "Mongo, to use MongoDb storage adapter",
+                "ext-redis": "Redis, to use Redis storage adapter",
+                "ext-wincache": "WinCache, to use the WinCache storage adapter",
+                "ext-xcache": "XCache, to use the XCache storage adapter",
+                "mongofill/mongofill": "Alternative to ext-mongo - a pure PHP implementation designed as a drop in replacement",
+                "zendframework/zend-serializer": "Zend\\Serializer component",
+                "zendframework/zend-session": "Zend\\Session component"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev",
+                    "dev-develop": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides a generic way to cache any data",
+            "homepage": "https://github.com/zendframework/zend-cache",
+            "keywords": [
+                "cache",
+                "zf2"
+            ],
+            "time": "2015-09-15 16:09:09"
+        },
+        {
+            "name": "zendframework/zend-config",
+            "version": "2.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-config.git",
+                "reference": "ec49b1df1bdd9772df09dc2f612fbfc279bf4c27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-config/zipball/ec49b1df1bdd9772df09dc2f612fbfc279bf4c27",
+                "reference": "ec49b1df1bdd9772df09dc2f612fbfc279bf4c27",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.23",
+                "zendframework/zend-stdlib": "~2.5"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "1.7.*",
+                "phpunit/phpunit": "~4.0",
+                "zendframework/zend-filter": "~2.5",
+                "zendframework/zend-i18n": "~2.5",
+                "zendframework/zend-json": "~2.5",
+                "zendframework/zend-mvc": "~2.5",
+                "zendframework/zend-servicemanager": "~2.5"
+            },
+            "suggest": {
+                "zendframework/zend-filter": "Zend\\Filter component",
+                "zendframework/zend-i18n": "Zend\\I18n component",
+                "zendframework/zend-json": "Zend\\Json to use the Json reader or writer classes",
+                "zendframework/zend-servicemanager": "Zend\\ServiceManager for use with the Config Factory to retrieve reader and writer instances"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev",
+                    "dev-develop": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Config\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides a nested object property based user interface for accessing this configuration data within application code",
+            "homepage": "https://github.com/zendframework/zend-config",
+            "keywords": [
+                "config",
+                "zf2"
+            ],
+            "time": "2015-06-03 15:32:00"
+        },
+        {
+            "name": "zendframework/zend-eventmanager",
+            "version": "2.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-eventmanager.git",
+                "reference": "135af03d07fd048c322259aab6611d2be290475c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-eventmanager/zipball/135af03d07fd048c322259aab6611d2be290475c",
+                "reference": "135af03d07fd048c322259aab6611d2be290475c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5",
+                "zendframework/zend-stdlib": "~2.5"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "1.7.*",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev",
+                    "dev-develop": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\EventManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "homepage": "https://github.com/zendframework/zend-eventmanager",
+            "keywords": [
+                "eventmanager",
+                "zf2"
+            ],
+            "time": "2015-07-16 19:00:49"
+        },
+        {
+            "name": "zendframework/zend-hydrator",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-hydrator.git",
+                "reference": "f3ed8b833355140350bbed98d8a7b8b66875903f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-hydrator/zipball/f3ed8b833355140350bbed98d8a7b8b66875903f",
+                "reference": "f3ed8b833355140350bbed98d8a7b8b66875903f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5",
+                "zendframework/zend-stdlib": "^2.5.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "^2.0@dev",
+                "zendframework/zend-eventmanager": "^2.5.1",
+                "zendframework/zend-filter": "^2.5.1",
+                "zendframework/zend-inputfilter": "^2.5.1",
+                "zendframework/zend-serializer": "^2.5.1",
+                "zendframework/zend-servicemanager": "^2.5.1"
+            },
+            "suggest": {
+                "zendframework/zend-eventmanager": "^2.5.1, to support aggregate hydrator usage",
+                "zendframework/zend-filter": "^2.5.1, to support naming strategy hydrator usage",
+                "zendframework/zend-serializer": "^2.5.1, to use the SerializableStrategy",
+                "zendframework/zend-servicemanager": "^2.5.1, to support hydrator plugin manager usage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev",
+                    "dev-develop": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Hydrator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "homepage": "https://github.com/zendframework/zend-hydrator",
+            "keywords": [
+                "hydrator",
+                "zf2"
+            ],
+            "time": "2015-09-17 14:06:43"
+        },
+        {
+            "name": "zendframework/zend-json",
+            "version": "2.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-json.git",
+                "reference": "4a3add6505fd8618728239d8ce35f182dfbdac02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-json/zipball/4a3add6505fd8618728239d8ce35f182dfbdac02",
+                "reference": "4a3add6505fd8618728239d8ce35f182dfbdac02",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5",
+                "zendframework/zend-stdlib": "~2.5"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "1.7.*",
+                "phpunit/phpunit": "~4.0",
+                "zendframework/zend-http": "~2.5",
+                "zendframework/zend-server": "~2.5",
+                "zendframework/zendxml": "~1.0"
+            },
+            "suggest": {
+                "zendframework/zend-http": "Zend\\Http component",
+                "zendframework/zend-server": "Zend\\Server component",
+                "zendframework/zendxml": "To support Zend\\Json\\Json::fromXml() usage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev",
+                    "dev-develop": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Json\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides convenience methods for serializing native PHP to JSON and decoding JSON to native PHP",
+            "homepage": "https://github.com/zendframework/zend-json",
+            "keywords": [
+                "json",
+                "zf2"
+            ],
+            "time": "2015-08-05 14:45:17"
+        },
+        {
+            "name": "zendframework/zend-servicemanager",
+            "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-servicemanager.git",
+                "reference": "1dc33f23bd0a7f4d8ba743b915fae523d356027a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-servicemanager/zipball/1dc33f23bd0a7f4d8ba743b915fae523d356027a",
+                "reference": "1dc33f23bd0a7f4d8ba743b915fae523d356027a",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "~1.0",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "1.7.*",
+                "phpunit/phpunit": "~4.0",
+                "zendframework/zend-di": "~2.5",
+                "zendframework/zend-mvc": "~2.5"
+            },
+            "suggest": {
+                "ocramius/proxy-manager": "ProxyManager 0.5.* to handle lazy initialization of services",
+                "zendframework/zend-di": "Zend\\Di component"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev",
+                    "dev-develop": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\ServiceManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "homepage": "https://github.com/zendframework/zend-servicemanager",
+            "keywords": [
+                "servicemanager",
+                "zf2"
+            ],
+            "time": "2015-07-23 21:49:08"
+        },
+        {
+            "name": "zendframework/zend-stdlib",
+            "version": "2.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-stdlib.git",
+                "reference": "e310dc83e756fdf0f61281540c4bee29f9e72e36"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/e310dc83e756fdf0f61281540c4bee29f9e72e36",
+                "reference": "e310dc83e756fdf0f61281540c4bee29f9e72e36",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5",
+                "zendframework/zend-hydrator": "~1.0"
+            },
+            "require-dev": {
+                "athletic/athletic": "~0.1",
+                "fabpot/php-cs-fixer": "1.7.*",
+                "phpunit/phpunit": "~4.0",
+                "zendframework/zend-config": "~2.5",
+                "zendframework/zend-eventmanager": "~2.5",
+                "zendframework/zend-filter": "~2.5",
+                "zendframework/zend-inputfilter": "~2.5",
+                "zendframework/zend-serializer": "~2.5",
+                "zendframework/zend-servicemanager": "~2.5"
+            },
+            "suggest": {
+                "zendframework/zend-eventmanager": "To support aggregate hydrator usage",
+                "zendframework/zend-filter": "To support naming strategy hydrator usage",
+                "zendframework/zend-serializer": "Zend\\Serializer component",
+                "zendframework/zend-servicemanager": "To support hydrator plugin manager usage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev",
+                    "dev-develop": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Stdlib\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "homepage": "https://github.com/zendframework/zend-stdlib",
+            "keywords": [
+                "stdlib",
+                "zf2"
+            ],
+            "time": "2015-09-22 16:25:52"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "silverstripe/framework": 5,
+        "andrelohmann-silverstripe/framework-fixes": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.3.2"
+    },
+    "platform-dev": []
+}

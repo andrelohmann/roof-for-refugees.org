@@ -14,7 +14,7 @@ Config::inst()->update('GDBackend', 'default_quality', 100);
 
 Controller::add_extension('AppControllerExtension');
 
-Config::inst()->update('RootURLController', 'default_homepage_link', 'home');
+Config::inst()->update('RootURLController', 'default_homepage_link', '');
 
 Config::inst()->update('Security', 'default_login_dest', DEFAULT_LOGIN_DESTINATION);
 

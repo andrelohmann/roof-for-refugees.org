@@ -56,12 +56,12 @@ class GoogleSignupForm extends BootstrapHorizontalForm {
             
         $o_Member->Locale = i18n::get_locale();
             
-        EmailVerifiedMember::set_deactivate_send_validation_mail(false);
+        Config::inst()->update('Member', 'deactivate_send_validation_mail', false);
         $o_Member->Verified = true;
         $o_Member->VerificationEmailSent = true;
-        EmailVerifiedMember::set_deactivate_send_validation_mail(true);
+        Config::inst()->update('Member', 'deactivate_send_validation_mail', true);
         $o_Member->write();
-        EmailVerifiedMember::set_deactivate_send_validation_mail(false);
+        Config::inst()->update('Member', 'deactivate_send_validation_mail', false);
             
         $o_Member->addToFrontendGroup();
             

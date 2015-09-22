@@ -32,6 +32,13 @@ class GoogleSignupController extends Controller {
  	}
 
 	/**
+	 * Returns a link to this controller.  Overload with your own Link rules if they exist.
+	 */
+	public function Link() {
+		return self::$url_segment .'/';
+	}
+
+	/**
 	 * Show the registration form
 	 */
 	public function index() { // Signup Step 1

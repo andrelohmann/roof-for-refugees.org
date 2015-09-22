@@ -11,7 +11,6 @@
 /debug.log
 /silverstripe.log
 /vendor
-/composer.lock
 .DS_Store
 /themes
 /localegeoip
@@ -19,6 +18,7 @@
 /bootstrap_social_connect
 /bootstrap_extra_fields
 /bootstrap_navbar_languageform
+/bootstrap_navbar_loginform
 /extendedobjects
 /geoform
 /geoip

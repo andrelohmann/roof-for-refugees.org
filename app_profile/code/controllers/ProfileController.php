@@ -11,7 +11,14 @@ class ProfileController extends Controller {
 	public static $url_segment = 'profile';
 	
 	private static $allowed_actions = array( 
-		'index'
+		'index',
+                'refugee',
+                'RefugeeEditForm',
+                'hostel',
+                'HostelEditForm',
+                'occupiedtoggle',
+                'donator',
+                'DonatorEditForm'
 	);
 	
 	public static $template = 'BlankPage';
@@ -46,13 +53,77 @@ class ProfileController extends Controller {
 	 */
 	public function index() {
             
+            switch(Member::currentUser()->Type){
+                case 'refugee':
+                    return $this->redirect('profile/refugee');
+                break;
+            
+                case 'hostel':
+                    return $this->redirect('profile/hostel');
+                break;
+            
+                case 'donator':
+                    return $this->redirect('profile/donator');
+                break;
+            }
+        }
+        
+        public function refugee(){
+            
             // Vorerst keine Seite erstellt
             return $this->customise(new ArrayData(array(
-                "Title" => _t('Profile.INDEXTITLE', 'Profile.INDEXTITLE'),
-                "Content" => _t('Profile.INDEXCONTENT', 'Profile.INDEXCONTENT'),
-                "Form" => ''
+                "Title" => _t('Profile.REFUGEETITLE', 'Profile.REFUGEETITLE'),
+                "Content" => _t('Profile.REFUGEECONTENT', 'Profile.REFUGEECONTENT'),
+                "Form" => $this->RefugeeEditForm()
             )))->renderWith(
-                array('Profile_index', 'Profile', $this->stat('template_main'), $this->stat('template'))
+                array('Profile_refugee', 'Profile', $this->stat('template_main'), $this->stat('template'))
             );
 	}
+        
+        public function RefugeeEditForm(){
+            return RefugeeEditForm::create($this, 'RefugeeEditForm');
+        }
+        
+        public function hostel(){
+            
+            // Vorerst keine Seite erstellt
+            return $this->customise(new ArrayData(array(
+                "Title" => _t('Profile.HOSTELTITLE', 'Profile.HOSTELTITLE'),
+                "Content" => _t('Profile.HOSTELCONTENT', 'Profile.HOSTELCONTENT'),
+                "Form" => $this->HostelEditForm()
+            )))->renderWith(
+                array('Profile_hostel', 'Profile', $this->stat('template_main'), $this->stat('template'))
+            );
+	}
+        
+        public function HostelEditForm(){
+            return HostelEditForm::create($this, 'HostelEditForm');
+        }
+        
+        public function occupiedtoggle(){
+            if(Member::currentUser() && Member::currentUser()->Type == 'hostel'){
+                $Member = Member::currentUser();
+                if($Member->Occupied) $Member->Occupied = false;
+                else $Member->Occupied = true;
+                $Member->write();
+            }
+            
+            $this->redirectBack();
+        }
+        
+        public function donator(){
+            
+            // Vorerst keine Seite erstellt
+            return $this->customise(new ArrayData(array(
+                "Title" => _t('Profile.DONATORTITLE', 'Profile.DONATORTITLE'),
+                "Content" => _t('Profile.DONATORCONTENT', 'Profile.DONATORCONTENT'),
+                "Form" => $this->DonatorEditForm()
+            )))->renderWith(
+                array('Profile_donator', 'Profile', $this->stat('template_main'), $this->stat('template'))
+            );
+	}
+        
+        public function DonatorEditForm(){
+            return DonatorEditForm::create($this, 'DonatorEditForm');
+        }
 }

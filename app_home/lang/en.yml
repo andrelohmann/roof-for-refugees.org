@@ -1,8 +1,8 @@
 en: 
   Home:
     # Signup Headline
-    SIGNUPHEADLINE: 'Signup with your email address'
-    LOGINHEADLINE: 'or login with one of the following networks'
+    SIGNUPHEADLINE: 'or signup with your email address'
+    LOGINHEADLINE: 'Login with one of the following networks'
     LOGINWITHEMAIL: 'Login with your email address'
     # Home index Title
     HOMETITLE: 'What you can do'

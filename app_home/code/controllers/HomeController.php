@@ -17,7 +17,8 @@ class HomeController extends Controller {
 		'privacy',
 		'contact',
                 'ContactForm',
-		'imprint'
+		'imprint',
+                'help'
 	);
 	
 	public static $template = 'BlankPage';
@@ -49,6 +50,8 @@ class HomeController extends Controller {
 	 * @return string Returns the "login" page as HTML code.
 	 */
 	public function index() {
+            
+            if(Member::currentUser()) return $this->redirect('profile/index');
             
             Requirements::css('app_home/css/home_index.css');
             
@@ -133,6 +136,22 @@ class HomeController extends Controller {
                 "Form" => ''
             )))->renderWith(
                 array('Home_imprint', 'Home', $this->stat('template_main'), $this->stat('template'))
+            );
+	}
+
+	/**
+	 * Show the "login" page
+	 *
+	 * @return string Returns the "login" page as HTML code.
+	 */
+	public function help() {
+            
+            return $this->customise(new ArrayData(array(
+                "Title" => _t('Home.HELPTITLE', 'Home.HELPTITLE'),
+                "Content" => _t('Home.HELPCONTENT', 'Home.HELPCONTENT'),
+                "Form" => ''
+            )))->renderWith(
+                array('Home_help', 'Home', $this->stat('template_main'), $this->stat('template'))
             );
 	}
 }
