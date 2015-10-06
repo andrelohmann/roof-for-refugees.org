@@ -27,12 +27,13 @@ class DonatorEditForm extends BootstrapHorizontalForm {
         $fields = new FieldList(
             $Nickname = TextField::create('Nickname')->setTitle(_t('Member.NICKNAME','Member.NICKNAME')),
             $Location = BootstrapGeoLocationField::create('Location')->setTitle(_t('Member.LOCATION','Member.LOCATION')),
-            $About = TextareaField::create('About')->setTitle(_t('Member.ABOUT','Member.ABOUT'))->setPlaceholder(_t('Member.DONATORLABOUT','Member.DONATORABOUT')),
-            $Active = CheckboxField::create('Active')->setTitle(_t('Member.DONATORACTIVE','Member.DONATORACTIVE')),
+            $About = TextareaField::create('About')->setTitle(_t('DonatorProfile.ABOUT','DonatorProfile.ABOUT'))->setPlaceholder(_t('DonatorProfile.ABOUTDESCRIPTION','DonatorProfile.ABOUTDESCRIPTION')),
+            $Active = CheckboxField::create('Active')->setTitle(_t('Member.ACTIVE','Member.ACTIVE')),
             $Avatar = BootstrapFileField::create('Avatar')->setTitle(_t('Member.AVATAR','Member.AVATAR'))
         );
         
         $Location->setRightTitle(_t('Member.LOCATIONDESCRIPTION','Member.LOCATIONDESCRIPTION'));
+        $About->setRightTitle(_t('DonatorProfile.ABOUTDESCRIPTION','DonatorProfile.ABOUTDESCRIPTION'));
         
         // Upload Parameters
         $exts = array('jpg', 'jpeg', 'gif', 'png');

@@ -10,14 +10,68 @@ en:
     TYPEDONATORSIGNUP: 'I''m a regular donor'
     TYPEDESCRIPTION: 'Select the role you are in, wether you are looking for shelter, you can offer a bed or you are willed to support the refugees in your neighborhood with food, clothes, money or even time.'
     LOCATION: 'Location'
-    LOCATIONDESCRIPTION: 'Specify your location as accurate as you like, to get located by surrounding refugees and donators'
-  Profile:
-    # Home index Title
-    INDEXTITLE: 'Profile Title'
-    # Home Index Content
-    INDEXCONTENT: 'Profile Content'
+    LOCATIONDESCRIPTION: 'Specify your location as accurate as you like, to get located by surrounding members'
+    ONLYDISTANCEVISIBLE: 'your address will not be visible to any user, only the distance between you and other users will be shown'
+    ACTIVE: 'visible on the radar'
+    AVATAR: 'Avatar'
+    FILLYOURPROFILE: 'please fill your profile to finish the registration'
+    EDITRPROFILEBUTTON: 'change your profile'
     
   SignupForm:
     CONFIRMTOS: '<p>By clicking the button you agree with the <a href="home/terms">Terms and Conditions</a> & <a href="home/privacy">Privacy Policy</a></p>'
     BUTTONSIGNUP: 'Signup'
     EMAILEXISTS: 'Your email allready exists on the system'
+    
+  PasswordEditForm:
+    CHANGEPASSWORD: 'Save'
+    
+  RefugeeProfile:
+    TYPE: 'Refugee'
+    LOCATED: 'Location'
+    ADULTS: 'adults in our group'
+    CHILDREN: 'children in our group'
+    BABY: 'baby accessories necessary'
+    ABOUT: 'about'
+    ABOUTDESCRIPTION: 'where are you coming from? why are you on the run? what do you need the most? tell a few words, to give people the chance to help you'
+    ADULTSDESCRIPTION: 'select the number of adults that are part of you and/or your group'
+    CHILDRENDESCRIPTION: 'select the number of children below 16 that are part of you and/or your group'
+    BABYDESCRIPTION: 'are you carrying one or more babies with you?'
+    
+  RefugeeEditForm:
+    SAVEBUTTON: 'Save changes'
+
+  RefugeeList:
+    ABOUTBUTTON: 'Story and demands'
+  
+  HostelProfile:
+    TYPE: 'Hostel'
+    LOCATED: 'Location'
+    ADULTS: 'number of adults we can house'
+    CHILDREN: 'number of children we can house'
+    BABY: 'baby accessories available'
+    ABOUT: 'about'
+    ABOUTDESCRIPTION: 'tell a few words about your environment. how many people are you, what kind of rooms, beds, couches you can offer? are there any specialities available like babybeds? what help or support do you need by the donators around you?'
+    ADULTSDESCRIPTION: 'select the number of adults you can house at your place'
+    CHILDRENDESCRIPTION: 'select the number of children below 16 you can house at your place'
+    BABYDESCRIPTION: 'are there any baby accessories available?'
+    CONFIRMTREATMENT: 'I confirm to offer my place to help and support refugees. I will not misuse them as cheap nannies, nurses, housekeepers, gardeners or anything else or profit in any other way from their emergency situation.'
+    OCCUPIEDSTATUS: 'availability'
+    OCCUPIED: 'occupied'
+    FREE: 'free'
+    
+  HostelEditForm:
+    SAVEBUTTON: 'Save changes'
+    
+  HostelList:
+    ABOUTBUTTON: 'Offers'
+  
+  DonatorProfile:
+    TYPE: 'Donator'
+    ABOUT: 'about'
+    ABOUTDESCRIPTION: 'tell a few words about yourself and how you want to help. spending time, giving german lessons, accompany to governmental offices, offering clothes, accessroies, small amounts of money'
+    
+  DonatorEditForm:
+    SAVEBUTTON: 'Save changes'
+  
+  DonatorList:
+    ABOUTBUTTON: 'Offers'

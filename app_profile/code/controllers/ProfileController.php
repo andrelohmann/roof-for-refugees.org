@@ -18,7 +18,8 @@ class ProfileController extends Controller {
                 'HostelEditForm',
                 'occupiedtoggle',
                 'donator',
-                'DonatorEditForm'
+                'DonatorEditForm',
+                'delqueuemessage'
 	);
 	
 	public static $template = 'BlankPage';
@@ -72,7 +73,6 @@ class ProfileController extends Controller {
             
             // Vorerst keine Seite erstellt
             return $this->customise(new ArrayData(array(
-                "Title" => _t('Profile.REFUGEETITLE', 'Profile.REFUGEETITLE'),
                 "Content" => _t('Profile.REFUGEECONTENT', 'Profile.REFUGEECONTENT'),
                 "Form" => $this->RefugeeEditForm()
             )))->renderWith(
@@ -88,7 +88,6 @@ class ProfileController extends Controller {
             
             // Vorerst keine Seite erstellt
             return $this->customise(new ArrayData(array(
-                "Title" => _t('Profile.HOSTELTITLE', 'Profile.HOSTELTITLE'),
                 "Content" => _t('Profile.HOSTELCONTENT', 'Profile.HOSTELCONTENT'),
                 "Form" => $this->HostelEditForm()
             )))->renderWith(
@@ -115,7 +114,6 @@ class ProfileController extends Controller {
             
             // Vorerst keine Seite erstellt
             return $this->customise(new ArrayData(array(
-                "Title" => _t('Profile.DONATORTITLE', 'Profile.DONATORTITLE'),
                 "Content" => _t('Profile.DONATORCONTENT', 'Profile.DONATORCONTENT'),
                 "Form" => $this->DonatorEditForm()
             )))->renderWith(
@@ -125,5 +123,14 @@ class ProfileController extends Controller {
         
         public function DonatorEditForm(){
             return DonatorEditForm::create($this, 'DonatorEditForm');
+        }
+        
+        public function delqueuemessage(){
+            
+            if($Message = Member::currentUser()->MessageQueue()->byID($this->urlParams['ID'])){
+                $Message->delete();
+            }
+            
+            return $this->redirect('profile/index');
         }
 }

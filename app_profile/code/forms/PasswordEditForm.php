@@ -11,7 +11,7 @@ class PasswordEditForm extends BootstrapHorizontalForm {
     public function __construct($controller, $name, $fields = null, $actions = null) {
         
         $fields = new FieldList(
-            ReadonlyField::create('Surname')->setTitle(_t('Member.NICKNAME', 'Member.NICKNAME')),
+            ReadonlyField::create('Nickname')->setTitle(_t('Member.NICKNAME', 'Member.NICKNAME')),
             ReadonlyField::create('Email')->setTitle(_t('Member.EMAIL', 'Member.EMAIL')),
             $Password = new BootstrapConfirmedPasswordField(
                 'Password',

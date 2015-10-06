@@ -34,3 +34,16 @@ LocaleGeoip::set_country_locale_code_map(array(
 LocaleGeoip::set_default_locale_code('en_US');
 // apt-get install geoip-bin php5-geoip
 Geoip::set_default_country_code('US');
+
+/*SS_Cache::add_backend(
+    'primary_redis', 
+    'Redis',
+    array(
+        'server' => array(
+            'host' => '127.0.0.1', 
+            'port' => 6379
+        )
+    )
+);
+SS_Cache::pick_backend('primary_redis', 'any', 10);*/
+// REdis is noch compliant for 'any' caches

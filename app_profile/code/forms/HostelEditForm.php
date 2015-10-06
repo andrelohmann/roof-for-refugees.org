@@ -27,18 +27,20 @@ class HostelEditForm extends BootstrapHorizontalForm {
         $fields = new FieldList(
             $Nickname = TextField::create('Nickname')->setTitle(_t('Member.NICKNAME','Member.NICKNAME')),
             $Location = BootstrapGeoLocationField::create('Location')->setTitle(_t('Member.LOCATION','Member.LOCATION')),
-            $Adults = DropdownField::create('Adults')->setTitle(_t('Member.HOSTELADULTS','Member.HOSTELADULTS'))->setSource(Config::inst()->get('Member', 'people_sum')),
-            $Children = DropdownField::create('Children')->setTitle(_t('Member.HOSTELCHILDREN','Member.HOSTELCHILDREN'))->setSource(Config::inst()->get('Member', 'people_sum')),
-            $Baby = CheckboxField::create('Baby')->setTitle(_t('Member.HOSTELBABY','Member.HOSTELBABY')),
-            $About = TextareaField::create('About')->setTitle(_t('Member.ABOUT','Member.ABOUT'))->setPlaceholder(_t('Member.HOSTELABOUT','Member.HOSTELABOUT')),
-            $Active = CheckboxField::create('Active')->setTitle(_t('Member.HOSTELACTIVE','Member.HOSTELACTIVE')),
+            $Adults = DropdownField::create('Adults')->setTitle(_t('HostelProfile.ADULTS','HostelProfile.ADULTS'))->setSource(Config::inst()->get('Member', 'people_sum')),
+            $Children = DropdownField::create('Children')->setTitle(_t('HostelProfile.CHILDREN','HostelProfile.CHILDREN'))->setSource(Config::inst()->get('Member', 'people_sum')),
+            $Baby = CheckboxField::create('Baby')->setTitle(_t('HostelProfile.BABY','HostelProfile.BABY')),
+            $About = TextareaField::create('About')->setTitle(_t('HostelProfile.ABOUT','HostelProfile.ABOUT'))->setPlaceholder(_t('HostelProfile.ABOUTDESCRIPTION','HostelProfile.ABOUTDESCRIPTION')),
+            $Active = CheckboxField::create('Active')->setTitle(_t('Member.ACTIVE','Member.ACTIVE')),
+            $ConfirmTreatment = CheckboxField::create('ConfirmTreatment')->setTitle(_t('HostelProfile.CONFIRMTREATMENT','HostelProfile.CONFIRMTREATMENT')),
             $Avatar = BootstrapFileField::create('Avatar')->setTitle(_t('Member.AVATAR','Member.AVATAR'))
         );
         
         $Location->setRightTitle(_t('Member.LOCATIONDESCRIPTION','Member.LOCATIONDESCRIPTION'));
-        $Adults->setRightTitle(_t('Member.HOSTELADULTSDESCRIPTION','Member.HOSTELADULTSDESCRIPTION'));
-        $Children->setRightTitle(_t('Member.HOSTELCHILDRENDESCRIPTION','Member.HOSTELCHILDRENDESCRIPTION'));
-        $Baby->setRightTitle(_t('Member.HOSTELBABYDESCRIPTION','Member.HOSTELBABYDESCRIPTION'));
+        $Adults->setRightTitle(_t('HostelProfile.ADULTSDESCRIPTION','HostelProfile.ADULTSDESCRIPTION'));
+        $Children->setRightTitle(_t('HostelProfile.CHILDRENDESCRIPTION','HostelProfile.CHILDRENDESCRIPTION'));
+        $Baby->setRightTitle(_t('HostelProfile.BABYDESCRIPTION','HostelProfile.BABYDESCRIPTION'));
+        $About->setRightTitle(_t('HostelProfile.ABOUTDESCRIPTION','HostelProfile.ABOUTDESCRIPTION'));
         
         // Upload Parameters
         $exts = array('jpg', 'jpeg', 'gif', 'png');
@@ -66,7 +68,8 @@ class HostelEditForm extends BootstrapHorizontalForm {
                 "Location",
                 "Adults",
                 "Children",
-                "About"
+                "About",
+                "ConfirmTreatment"
             )
         );
         

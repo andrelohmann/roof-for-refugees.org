@@ -33,6 +33,10 @@ class RfrMemberExtension extends DataExtension {
         "SignupComplete" => "Boolean"
     );
     
+    private static $has_one = array(
+        'Avatar' => 'SecureImage'
+    );
+    
     public function AdultsSum(){
         if($this->owner->Adults) return self::$people_sum[$this->owner->Adults];
         return 0;
@@ -43,9 +47,21 @@ class RfrMemberExtension extends DataExtension {
         return 0;
     }
     
-    private static $has_one = array(
-        'Avatar' => 'SecureImage'
-    );
+    public function TypeIcon(){
+        switch($this->owner->Type){
+            case 'refugee':
+                return "glyphicon glyphicon-road";
+            break;
+        
+            case 'hostel':
+                return "glyphicon glyphicon-home";
+            break;
+        
+            case 'donator':
+                return "glyphicon glyphicon-heart";
+            break;
+        }
+    }
     
     
     public function onBeforeWrite() {
@@ -59,6 +75,10 @@ class RfrMemberExtension extends DataExtension {
             $this->owner->ID = $newId;
             if(!$this->owner->Email) $this->owner->Email = $newId;
         }
+    }
+    
+    public function getDistance(){
+        return round(GeoFunctions::getDistance(Member::currentUser()->obj('Location')->getLatitude(), Member::currentUser()->obj('Location')->getLongditude(), $this->owner->obj('Location')->getLatitude(), $this->owner->obj('Location')->getLongditude())).' km';
     }
     
     

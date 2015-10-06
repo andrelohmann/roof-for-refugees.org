@@ -27,18 +27,19 @@ class RefugeeEditForm extends BootstrapHorizontalForm {
         $fields = new FieldList(
             $Nickname = TextField::create('Nickname')->setTitle(_t('Member.NICKNAME','Member.NICKNAME')),
             $Location = BootstrapGeoLocationField::create('Location')->setTitle(_t('Member.LOCATION','Member.LOCATION')),
-            $Adults = DropdownField::create('Adults')->setTitle(_t('Member.REFUGEEADULTS','Member.REFUGEEADULTS'))->setSource(Config::inst()->get('Member', 'people_sum')),
-            $Children = DropdownField::create('Children')->setTitle(_t('Member.REFUGEECHILDREN','Member.REFUGEECHILDREN'))->setSource(Config::inst()->get('Member', 'people_sum')),
-            $Baby = CheckboxField::create('Baby')->setTitle(_t('Member.REFUGEEBABY','Member.REFUGEEBABY')),
-            $About = TextareaField::create('About')->setTitle(_t('Member.ABOUT','Member.ABOUT'))->setPlaceholder(_t('Member.REFUGEEABOUT','Member.REFUGEEABOUT')),
-            $Active = CheckboxField::create('Active')->setTitle(_t('Member.REFUGEEACTIVE','Member.REFUGEEACTIVE')),
+            $Adults = DropdownField::create('Adults')->setTitle(_t('RefugeeProfile.ADULTS','RefugeeProfile.ADULTS'))->setSource(Config::inst()->get('Member', 'people_sum')),
+            $Children = DropdownField::create('Children')->setTitle(_t('RefugeeProfile.CHILDREN','RefugeeProfile.CHILDREN'))->setSource(Config::inst()->get('Member', 'people_sum')),
+            $Baby = CheckboxField::create('Baby')->setTitle(_t('RefugeeProfile.BABY','RefugeeProfile.BABY')),
+            $About = TextareaField::create('About')->setTitle(_t('RefugeeProfile.ABOUT','RefugeeProfile.ABOUT'))->setPlaceholder(_t('RefugeeProfile.ABOUTDESCRIPTION','RefugeeProfile.ABOUTDESCRIPTION')),
+            $Active = CheckboxField::create('Active')->setTitle(_t('Member.ACTIVE','Member.ACTIVE')),
             $Avatar = BootstrapFileField::create('Avatar')->setTitle(_t('Member.AVATAR','Member.AVATAR'))
         );
         
         $Location->setRightTitle(_t('Member.LOCATIONDESCRIPTION','Member.LOCATIONDESCRIPTION'));
-        $Adults->setRightTitle(_t('Member.REFUGEEADULTSDESCRIPTION','Member.REFUGEEADULTSDESCRIPTION'));
-        $Children->setRightTitle(_t('Member.REFUGEECHILDRENDESCRIPTION','Member.REFUGEECHILDRENDESCRIPTION'));
-        $Baby->setRightTitle(_t('Member.REFUGEEBABYDESCRIPTION','Member.REFUGEEBABYDESCRIPTION'));
+        $Adults->setRightTitle(_t('RefugeeProfile.ADULTSDESCRIPTION','RefugeeProfile.ADULTSDESCRIPTION'));
+        $Children->setRightTitle(_t('RefugeeProfile.CHILDRENDESCRIPTION','RefugeeProfile.CHILDRENDESCRIPTION'));
+        $Baby->setRightTitle(_t('RefugeeProfile.BABYDESCRIPTION','RefugeeProfile.BABYDESCRIPTION'));
+        $About->setRightTitle(_t('RefugeeProfile.ABOUTDESCRIPTION','RefugeeProfile.ABOUTDESCRIPTION'));
         
         // Upload Parameters
         $exts = array('jpg', 'jpeg', 'gif', 'png');

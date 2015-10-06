@@ -1,0 +1,8 @@
+en:
+  Find:
+    REFUGEESLINK: 'Refugees'
+    HOSTELSLINK: 'Hostels'
+    DONATORSLINK: 'Donators'
+  SearchForm:
+    RADIUS: 'Radius'
+    UPDATERADIUS: 'Update List'

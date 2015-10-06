@@ -68,6 +68,10 @@
             {
                 "type": "vcs",
                 "url": "https://github.com/andrelohmann/silverstripe-shariff"
+            },
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-benchmark"
             }
 	],
 	"require": {
@@ -91,7 +95,8 @@
                 "andrelohmann-silverstripe/mobile_detector": "2.*",
                 "andrelohmann-silverstripe/session_extender": "2.*",
                 "andrelohmann-silverstripe/gua-cookie-policy": "1.*",
-                "andrelohmann-silverstripe/shariff": "1.*"
+                "andrelohmann-silverstripe/shariff": "1.*",
+                "andrelohmann-silverstripe/benchmark": "1.*"
 	},
         "scripts": {
             "post-install-cmd": [

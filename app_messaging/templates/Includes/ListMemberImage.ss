@@ -1,0 +1,2 @@
+                                    <% if $Avatar %>$Avatar.SetWidth(100).setAttribute(class, img-responsive)<br /><% end_if %>
+                                    <span class="glyphicon glyphicon-map-marker"></span> $Distance <% if $IsOnline %><span class="label label-success"><span class="glyphicon glyphicon-ok-circle"></span>Online</span><% else %><span class="label label-danger"><span class="glyphicon glyphicon-ban-circle"></span>Offline</span><% end_if %>

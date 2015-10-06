@@ -37,7 +37,7 @@ class PasswordAdminController extends Controller {
 	public function init() {
 		parent::init();
         
-        if(!Member::currentUser() || !Member::currentUser()->IsContentAuthor()) $this->redirect('Security/login?BackURL=cloud/index');
+                if(!Member::currentUser()) $this->redirect('Security/login?BackURL=passwordadmin/index');
  	}
 
 	/**
