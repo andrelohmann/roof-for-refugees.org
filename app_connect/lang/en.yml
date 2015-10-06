@@ -1,0 +1,17 @@
+en:
+  RfrFacebookConnect:
+    SIGNUPTITLE: 'Signup with facebook'
+    SIGNUPCONTENT: 'Finalize your signup with facebook'
+    BUTTONSIGNUP: 'Signup'
+  RfrGoogleConnect:
+    SIGNUPTITLE: 'Signup with google'
+    SIGNUPCONTENT: 'Finalize your signup with google'
+    BUTTONSIGNUP: 'Signup'
+  RfrInstagramConnect:
+    SIGNUPTITLE: 'Signup with instagram'
+    SIGNUPCONTENT: 'Finalize your signup with instagram'
+    BUTTONSIGNUP: 'Signup'
+  RfrTwitterConnect:
+    SIGNUPTITLE: 'Signup with twitter'
+    SIGNUPCONTENT: 'Finalize your signup with twitter'
+    BUTTONSIGNUP: 'Signup'

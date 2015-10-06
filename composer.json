@@ -1,0 +1,110 @@
+{
+    "name": "andrelohmann/roof-for-refugees",
+        "repositories": [
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-framework-fixes"
+            },
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-themes-bootstrap"
+            },
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-localegeoip"
+            },
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-email_verified_member"
+            },
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-bootstrap_social_connect"
+            },
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-bootstrap_extra_fields"
+            },
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-bootstrap_navbar_languageform"
+            },
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-bootstrap_navbar_loginform"
+            },
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-extendedobjects"
+            },
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-geoform"
+            },
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-geoip"
+            },
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-legacyfields"
+            },
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-mobile_detector"
+            },
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-session_extender"
+            },
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-smtpmailer"
+            },
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-gua-cookie-policy"
+            },
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-shariff"
+            },
+            {
+                "type": "vcs",
+                "url": "https://github.com/andrelohmann/silverstripe-benchmark"
+            }
+	],
+	"require": {
+		"php": ">=5.3.2",
+		"composer/installers": "*",
+                "php-ffmpeg/php-ffmpeg": "0.6.0",
+                "silverstripe/framework": "3.2.0-rc1",
+                "andrelohmann-silverstripe/framework-fixes": "dev-master",
+                "andrelohmann-silverstripe-themes/bootstrap": "4.*",
+                "andrelohmann-silverstripe/smtpmailer": "2.*",
+                "andrelohmann-silverstripe/geoip": "2.*",
+                "andrelohmann-silverstripe/localegeoip": "2.*",
+                "andrelohmann-silverstripe/geoform": "2.*",
+                "andrelohmann-silverstripe/extendedobjects": "2.*",
+                "andrelohmann-silverstripe/email_verified_member": "2.*",
+                "andrelohmann-silverstripe/bootstrap_social_connect": "2.*",
+                "andrelohmann-silverstripe/bootstrap_extra_fields": "2.*",
+                "andrelohmann-silverstripe/bootstrap_navbar_loginform": "2.*",
+                "andrelohmann-silverstripe/bootstrap_navbar_languageform": "2.*",
+                "andrelohmann-silverstripe/legacyfields": "2.*",
+                "andrelohmann-silverstripe/mobile_detector": "2.*",
+                "andrelohmann-silverstripe/session_extender": "2.*",
+                "andrelohmann-silverstripe/gua-cookie-policy": "1.*",
+                "andrelohmann-silverstripe/shariff": "1.*",
+                "andrelohmann-silverstripe/benchmark": "1.*"
+	},
+        "scripts": {
+            "post-install-cmd": [
+                "cp -r vendor/andrelohmann-silverstripe/framework-fixes/* framework/"
+            ],
+            "post-update-cmd": [
+                "cp -r vendor/andrelohmann-silverstripe/framework-fixes/* framework/"
+            ]
+        },
+	"minimum-stability": "stable"
+}

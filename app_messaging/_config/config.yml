@@ -1,0 +1,9 @@
+---
+Name: app_profile
+After: 'framework/*'
+---
+
+Member:
+  extensions:
+    - IMMember
+    - MessageQueueMember

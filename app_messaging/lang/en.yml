@@ -1,0 +1,37 @@
+en:
+  Message:
+    CHAT: 'chat'
+    CHATPARTNER: 'chat with %s'
+    NOMESSAGES: 'start a conversation'
+    MESSAGETEXT: 'Message'
+    BUTTONSEND: 'Submit'
+    
+  QueueMessage:
+    FRINDREQUESTTEXT: '{nickname} has requested your contact'
+    FRINDCONFIRMTEXT: '{nickname} has confirmed your contact'
+    FRINDDECLINETEXT: '{nickname} has declined your contact'
+    FRINDDROPTEXT: '{nickname} has dropped your contact'
+    
+  Contacts:
+    REQUESTCONTACT: 'add contact'
+    CONFIRMCONTACT: 'confirm contact'
+    DECLINECONTACT: 'decline contact'
+    DECLINECONTACTCONFIRM: 'do you really want to decline this contact request?'
+    DROPCONTACT: 'drop contact'
+    DROPCONTACTCONFIRM: 'do you really want to drop this contact?'
+    
+  Refugee:
+    GROUPMEMBERS: 'Members of our Group'
+    ADULTS: 'Adults'
+    CHILDREN: 'Children'
+    BABY: 'Baby'
+    
+  Hostel:
+    ROOMFOR: 'People we can house' 
+    ADULTS: 'Adults'
+    CHILDREN: 'Children'
+    BABY: 'Baby accessories available'
+    AVAILABILITY: 'Available'
+    OCCUPIED: 'Occupied'
+    FREE: 'Free'
+    

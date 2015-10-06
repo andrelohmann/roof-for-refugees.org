@@ -1,0 +1,19 @@
+en:
+  TopMenu:
+    # Navbar Top Menu
+    PROFILE: 'Profile'
+    FIND: 'Radar'
+    CONTACTS: 'Contacts'
+    MESSAGING: 'Messaging'
+    
+  PasswordMenu:
+    CHANGEPASSWORD: 'Change password'
+  BottomMenu:
+    # Navbar Bottom Menu
+    TERMS: 'Terms and Conditions'
+    PRIVACY: 'Privacy Policy'
+    CONTACT: 'Contact'
+    IMPRINT: 'Imprint'
+    HELP: 'Help'
+    SPONSORS: 'Sponsors'
+    
